@@ -15,7 +15,10 @@ class PersonHolder(
         name.text = data.first_name
         surname.text = data.last_name
         email.text = data.email
-        avatar.load(data.avatar)
+        avatar.load(data.avatar) {
+            placeholder(android.R.drawable.ic_menu_gallery)
+            error(android.R.drawable.ic_menu_gallery)
+        }
 
         root.setOnClickListener {
             listener.onItemClick(data)

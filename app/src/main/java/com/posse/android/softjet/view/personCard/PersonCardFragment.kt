@@ -30,10 +30,13 @@ class PersonCardFragment : Fragment() {
     }
 
     private fun setupView() = with(binding) {
-        avatar.load(args.imageUri)
         name.text = args.name
         surname.text = args.surname
         email.text = args.email
+        avatar.load(args.imageUri) {
+            placeholder(android.R.drawable.ic_menu_gallery)
+            error(android.R.drawable.ic_menu_gallery)
+        }
     }
 
     override fun onDestroyView() {
