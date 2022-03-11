@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Softjet</string>
+    <string name="back_again_to_exit">Press \"BACK\" again to exit</string>
+    <string name="users">Users</string>
+    <string name="about">About</string>
+    <string name="name">Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="email">Email:</string>
+    <string name="test">Test app for Softjet</string>
+    <string name="offline">You are offline now!</string>
+</resources>

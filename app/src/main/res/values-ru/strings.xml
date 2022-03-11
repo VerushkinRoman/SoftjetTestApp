@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Softjet</string>
+    <string name="back_again_to_exit">Нажмите \"Назад\" еще раз для выхода</string>
+    <string name="users">Пользователи</string>
+    <string name="about">О программе</string>
+    <string name="name">Имя:</string>
+    <string name="surname">Фамилия:</string>
+    <string name="email">Почта:</string>
+    <string name="test">Тестовое задание для Softjet</string>
+    <string name="offline">Вы сейчас не в сети!</string>
+</resources>

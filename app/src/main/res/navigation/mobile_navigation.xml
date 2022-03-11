@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <action
+        android:id="@+id/action_global_toMainFragment"
+        app:destination="@id/mainFragment"
+        app:popUpTo="@+id/mainFragment"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_global_toAboutFragment"
+        app:destination="@id/aboutFragment"
+        app:popUpTo="@+id/mainFragment" />
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.posse.android.softjet.view.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/main_fragment_layout">
+        <action
+            android:id="@+id/action_mainFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.posse.android.softjet.view.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/about_layout" />
+
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.posse.android.softjet.view.personCard.PersonCardFragment"
+        android:label="fragment_person"
+        tools:layout="@layout/person_big_card_layout">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
+        <argument
+            android:name="imageUri"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
+</navigation>
